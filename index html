@@ -3,13 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GGFlix Web App</title>
+  <title>Tutflix - Watch Movies for Free</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script defer src="js/ad-blocker.js"></script>
 </head>
 <body>
-  <div id="container">
-    <iframe id="ggflix-frame" src="https://ggflix.ru" width="100%" height="100%" style="border:none;"></iframe>
-  </div>
+  <header>
+    <h1>Tutflix</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- GGFlix Embedded Iframe -->
+  <section id="movie-player">
+    <iframe id="ggflix-frame" src="https://ggflix.ru" width="100%" height="100%" style="border:none;" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Tutflix - Watch Movies for Free</p>
+  </footer>
 </body>
 </html>
